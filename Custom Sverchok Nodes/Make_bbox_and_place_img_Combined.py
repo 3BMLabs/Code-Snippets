@@ -56,7 +56,7 @@ class SvO3WMSImageCustomNode(SverchCustomTreeNode, bpy.types.Node):
     Rdy: FloatProperty(name="Rdy", default=0.0)
     breedte: FloatProperty(name="Breedte", default=400.0)
     hoogte: FloatProperty(name="Hoogte", default=400.0)
-    tempfilelocation: StringProperty(name="Tempfile Location", default="C:/TEMP/test.jpg")
+    
 
     def sv_init(self, context):
         self.inputs.new('SvStringsSocket', "Rdx").prop_name = "Rdx"
